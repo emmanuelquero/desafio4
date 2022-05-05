@@ -4,7 +4,7 @@ item=document.images
 for (let i of item)
     i.src="sinimagen.jpg"
     */
-
+/*
 const encabezado = document.getElementById ("formulario")
 console.log(encabezado)
 console.log(encabezado.innerHTML)
@@ -20,4 +20,13 @@ const enlace = document.createElement(`a`)
 enlace.textContent = "Nuevo"
 enlace.href= "/nuevo/enlace.html"
 enlace.classList.add(`a`)
-nav[0].appendChild (enlace)
+nav[0].appendChild (enlace)*/
+
+const lis = document.querySelectorAll ("li")
+console.log (lis)
+
+for(let li of lis) {
+    li.addEventListener("click", (e)=>{
+        console.log (e.target.textContent)
+    })
+}
